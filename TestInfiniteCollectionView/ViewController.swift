@@ -77,7 +77,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         let random = Int.random(in: 0...self.testColorArray.count - 1)
         
         cell.backView.backgroundColor = self.testColorArray[random]
-        
+        cell.backView.dropShadow(color: .black, offSet: CGSize(width: 0, height: 23))
         
         return cell
     }
@@ -101,7 +101,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             
             self.loadMore()
             self.collectionView.reloadData()
-            print(self.testViewArray.count)        }
+            print(self.testViewArray.count)
+            
+        }
     }
 }
 

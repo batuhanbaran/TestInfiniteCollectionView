@@ -18,7 +18,7 @@ class CollectionViewCell: UICollectionViewCell {
         // Initialization code
         
 
-        backView.layer.cornerRadius = 16
+        backView.layer.cornerRadius = 8
         backView.layer.masksToBounds = true
 
     }

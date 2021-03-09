@@ -87,6 +87,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         return CGSize.init(width: view.frame.width - 25, height: 75)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        self.present(TestDetailViewController(nibName: "TestDetailViewController", bundle: nil), animated: true, completion: nil)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
            
         return UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
